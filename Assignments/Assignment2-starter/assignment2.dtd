@@ -1,0 +1,20 @@
+<!-- -->
+<!ELEMENT school (courses, students, CRNs, student-CRNs)>
+
+<!ELEMENT courses (course)*>
+<!ELEMENT students (student)*>
+<!ELEMENT CRNs (CRN)*>
+<!ELEMENT student-CRNs (student-CRN)*>
+
+<!ELEMENT course (credits,description,number,name)>
+<!ATTLIST course number ID #REQUIRED
+                              prerequisites IDREFS #IMPLIED>
+<!ELEMENT student (email,firstName,lastName,phoneNumber)>
+<!ATTLIST student ID ID #REQUIRED>
+<!ELEMENT CRN (totalNumStudents,endDate,startDate,cost,instructorName)>
+<!ATTLIST CRN ID ID #REQUIRED
+                          courseNumber IDREF #REQUIRED>
+<!ELEMENT student-CRN (#PCDATA)>
+<!ATTLIST student-CRN studentID IDREF #REQUIRED
+                                      CRN IDREF #REQUIRED>
+                                        

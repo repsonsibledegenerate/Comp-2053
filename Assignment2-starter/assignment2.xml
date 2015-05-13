@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE school SYSTEM "assignment2.dtd">
+<school>
+  <courses>
+    <course number="comp2053" prerequisites="">
+      <credits></credits>    
+      <description></description>
+      <name></name>
+    </course>
+    
+   <course number="comp2613" prerequisites="">
+      <credits></credits>    
+      <description></description>
+      <name></name>
+    </course>
+    
+    <course number="comp2617" prerequisites="">
+      <credits></credits>
+      <description></description>
+      <name></name>
+    </course>
+  </courses>
+  
+  <students>
+    <student ID="a00808650">
+      <email></email>
+      <firstName></firstName>
+      <lastName></lastName>
+      <phoneNumber></phoneNumber>
+    </student>
+    
+    <student ID="a00808337">
+      <email></email>
+      <firstName></firstName>
+      <lastName></lastName>
+      <phoneNumber></phoneNumber>
+    </student>
+    
+    <student ID="a00808780">
+      <email></email>
+      <firstName></firstName>
+      <lastName></lastName>
+      <phoneNumber></phoneNumber>
+    </student>
+  </students>
+  
+  <CRNs>
+    <CRN ID="s57035" courseNumber="comp2053">
+      <totalNumStudents></totalNumStudents>
+      <endDate></endDate>  
+      <startDate></startDate>
+      <cost></cost>
+      <instructorName></instructorName>
+    </CRN>
+    
+    <CRN ID="s66359" courseNumber="comp2613">
+      <totalNumStudents></totalNumStudents>
+      <endDate></endDate>  
+      <startDate></startDate>
+      <cost></cost>
+      <instructorName></instructorName>
+    </CRN>
+    
+    <CRN ID="s66358" courseNumber="comp2617">
+      <totalNumStudents></totalNumStudents>
+      <endDate></endDate>  
+      <startDate></startDate>
+      <cost></cost>
+      <instructorName></instructorName>
+    </CRN>
+  </CRNs>
+  
+  <student-CRNs>
+    <student-CRN studentID="a00808650" CRN="s57035"/>
+    <student-CRN studentID="a00808650" CRN="s66359"/>
+    <student-CRN studentID="a00808337" CRN="s66358"/>
+  </student-CRNs>
+</school>

@@ -1,0 +1,579 @@
+/*
+ *  Template: Geek-kit Laid Back
+ *  Author    Arron Ferguson
+ *  Copyright (c) 2006 
+ *
+ *  The colors for this template are:
+ *  255, 255, 255 (white)
+ *  138, 125, 36  (army brownish-green)
+ *  229, 215, 126 (greenish-yellow)
+ *  206, 54, 42   (brownish-red)
+ *  134, 61, 55   (burnt umber)
+ *  0, 0, 0       (black)
+ */
+
+/*********************************************************************
+ *
+ *    CORE HTML SECTION
+ *
+ *********************************************************************/
+
+
+/*
+ * The main body of text within the HTML document.
+ */
+body
+{
+  background-color: rgb(229, 215, 126);
+  color: rgb(0, 0, 0);
+  font-family: calibri, helvetica, sans-serif;
+  text-align: justify;
+  font-size: 11pt;
+  margin: 4px;
+}
+
+pre
+{
+  /*
+   * The following is a testament of how the Web simply has not changed since
+   * the browser wars of 10 (1995) years ago where imcompatibility issues,
+   * hacks, kludges and stark inconsistencies were not just expected but the
+   * defacto standard. The CSS whitespace code is a great example of everybody
+   * doing 'their own thing'. The W3C takes too long to formulate a
+   * recommendation and therefore browser developers, rather than working
+   * together, fight each other by offering their own non-standard individual
+   * workarounds to a shortcoming. Those that suffer from this are the Web
+   * developers that have to design pages that offer the most flexibility to
+   * browsers.
+   *
+   * - agf
+   */
+  white-space: pre-line;       /* For when Cascading Style Sheets,
+                                  level 2 revision 1 CSS 2.1 Specification,
+                                  W3C Working Draft 13 June 2005 comes out
+                                  as a full working recommendation and the Web
+                                  browsers start supporting it (which, at the
+                                  time of this writing, they don't) */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  white-space: -pre-wrap;      /* Opera 4 - 6 */
+  word-wrap: break-word;       /* IE 5.5+ */
+  padding-top: 5px;
+}
+
+/*
+ * The link formatting is a base inheritable format that all other
+ * sub elements can use and derive from. This helps in remaining
+ * consistent.
+ */
+a
+{
+  text-decoration: underline;
+  font-weight: bold;
+  color: rgb(134, 61, 55);
+}
+
+/*
+ * Link color or visited (should be the same since most users don't
+ * wish to make the distinction).
+ */
+a:link, a:visited
+{
+  color: rgb(134, 61, 55);
+}
+
+/*
+ * When a link is hovered over. The line disappears which provides a
+ * visible change for hovering.
+ */
+a:hover
+{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+/*
+ * When the link is active (i.e. clicked on), it will change color.
+ */
+a:active
+{
+  color: rgb(0, 0, 0);
+}
+
+
+/*********************************************************************
+ *
+ *    CONTENT SECTION
+ *
+ *********************************************************************/
+
+
+/*
+ * The main working area where content blocks are placed into.
+ */
+.content
+{
+  background-color: rgb(138, 125, 36);
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: 2;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  min-height: 500px;
+  min-width: 720px;
+  padding:0;
+  text-align: left;
+  width: 80%;
+}
+
+/*
+ * A table with text.
+ */
+.text-table
+{
+  background-color: rgb(229, 215, 126);
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: 2;
+  text-align: left;
+}
+
+/*
+ * The table's header.
+ */
+.text-table th
+{
+  background-color: rgb(134, 61, 55);
+  color: rgb(255, 255, 255);
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: left;
+}
+
+/*
+ * For table rows alternative background color for visual clarity.
+ */
+.table-row-alternate-color
+{
+  background-color: rgb(138, 125, 36);
+}
+
+/*
+ * The table's table data.
+ */
+.text-table td
+{
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: left;
+}
+
+/*
+ * An image gallery.
+ */
+.image-gallery
+{
+  background-color: rgb(229, 215, 126);
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: 2;
+  text-align: left;
+}
+
+/*
+ * The image gallery's table header.
+ */
+.image-gallery th
+{
+  background-color: rgb(134, 61, 55);
+  color: rgb(255, 255, 255);
+  font-size: 8pt;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  text-align: left;
+}
+
+/*
+ * The image gallery's table data.
+ */
+.image-gallery td
+{
+  font-size: 8pt;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  text-align: left;
+}
+
+.code-section-format
+{
+  background-color: rgb(229, 215, 126);
+}
+
+/*
+ * The whitespace area where content is actually placed into
+ */
+.contentPane
+{
+  background-color: rgb(255, 255, 255);
+  clear:left;
+  color: rgb(0, 0, 0);
+  margin: 22px;
+  min-height: 400px;
+  min-width: 650px;
+  padding: 8px;
+}
+
+/*
+ * The acronym in HTML which really acts more than just an acronym as
+ * it can be misused for a general-case tooltip type of component where
+ * the term or definition is presented and a tooltip pops up when the
+ * cursor rolls over the term.
+ */
+.contentPane acronym
+{
+  border-bottom: 1px;
+  border-color: rgb(206, 54, 42);
+  border-left: 0px;
+  border-right: 0px;
+  border-style: dashed;
+  border-top: 1px;
+  cursor: help;
+  text-decoration: none;
+}
+
+
+/*********************************************************************
+ *
+ *    HEADER AND FOOTER SECTION
+ *
+ *********************************************************************/
+
+/*
+ * The titlebar that contains an image and the menu.
+ */
+.titlebar
+{
+  background-image: url('./images/geekkit-laid-back-banner.jpg');
+  background-repeat:repeat;
+  font-weight: bold;
+  height: 215px;
+  padding: 1px;
+}
+
+.titlebar h1
+{
+  color: rgb(229, 215, 126);
+  padding-left: 15px;
+  padding-top: 155px;
+}
+
+/*
+ * The footer.
+ */
+.footer
+{
+  font-size: 8pt;
+  text-align: center;
+}
+
+/*
+ * Paragraphs in the footer.
+ */
+.footer p
+{
+  display:inline;
+  padding-left: 10pt;
+  padding-right: 10pt;
+}
+
+/*
+ * The news section for news items. It will float and stick to the
+ * right side of the box it sits in.
+ */
+.floatBox
+{
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: 1px;
+  float: right;
+  font-size: 10pt;
+  margin: 3px;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: relative;
+  text-align: left;
+  width: 150px;
+}
+
+/*
+ * The news section heading 3.
+ */
+.floatBox h3
+{
+  background-color: rgb(206, 54, 42);
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/*
+ * The news section heading 5.
+ */
+.floatBox h5
+{
+  background-color: rgb(206, 54, 42);
+  color: rgb(255, 255, 255);
+  font-size: 1.0em;
+  margin: 0px;
+  padding: 3px;
+}
+
+/*
+ * The news section paragraph.
+ */
+.floatBox p
+{
+  margin-bottom: 16px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+
+/*********************************************************************
+ *
+ *    MENU SECTION
+ *
+ *********************************************************************/
+
+
+/*
+ * The menu for main links to the site.
+ */
+.menu
+{
+  background-color: rgb(206, 54, 42);
+  clear:both;
+  color: rgb(255, 255, 255);
+  display:block;
+  float:left;
+  font-size: 0.90em;
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  width: 100%;
+}
+
+/*
+ * The overriding format for the menu link (overriding the above
+ * behavior and adding to it).
+ */
+.menu a
+{
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: 1px;
+  color: rgb(255, 255, 255);
+  float:left;
+  font-weight: bold;
+  line-height:2em;
+  text-align: center;
+  text-decoration: none;
+  width: 15%;
+}
+
+
+/*
+ * Menu link (regular) and visited link.
+ */
+.menu a:link, .menu a:visited
+{
+  color: rgb(255, 255 ,255);
+  float:left;
+  line-height:2em;
+}
+
+/*
+ * A menu link that has a mouse-over.
+ */
+.menu a:hover
+{
+  background-color: rgb(134, 61, 55);
+  color: rgb(255, 255, 255);
+  float:left;
+  line-height:2em;
+}
+
+/*
+ * The menu active link (clicking on it).
+ */
+.menu a:active
+{
+  color: rgb(134, 61, 55);
+  float:left;
+  line-height:2em;
+}
+
+/*
+ * Menu items which are contained in the menu.
+ */
+.menu li
+{
+  display:inline;
+}
+
+
+
+/*********************************************************************
+ *
+ *    SEARCH SECTION
+ *
+ *********************************************************************/
+
+.search-panel
+{
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: thin;
+  float: none;
+  font-size: 0.9em;
+  text-align: center;
+  width: 55%;
+}
+
+.search-panel-list
+{
+  background-color: rgb(229, 215, 126);
+  padding-bottom: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
+  text-align: center;
+  width: 80%;
+}
+
+.search-results-panel
+{
+  background-color: rgb(229, 215, 126);
+  border-style: solid;
+  border-width: thin;
+  float: none;
+  font-size: 0.85em;
+  text-align: left;
+  width: 99%;
+}
+
+.search-results-panel h3
+{
+  background-color: rgb(134, 61, 55);
+  color: rgb(255, 255, 255);
+  margin: 0px;
+}
+
+.search-results-panel li
+{
+  padding-bottom: 10px;
+}
+
+
+/*********************************************************************
+ *
+ *    FORUM SECTION
+ *
+ *********************************************************************/
+
+
+
+/*
+ * The forum list.
+ */
+.forum
+{
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: thin;
+  font-size: 0.9em;
+  text-align: left;
+  width: 100%;
+}
+
+/*
+ * The forum list headers
+ */
+.forum th
+{
+  background-color: rgb(134, 61, 55);
+  color: rgb(255, 255, 255);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/*
+ * The replies column needs to have different formatting (e.g.
+ * center, different background color) just to make it prettier.
+ */
+.replies-column
+{
+  background-color: rgb(229, 215, 126);
+  text-align: center;
+}
+
+/*
+ * The time column - format a little different to distinguish it
+ * from the date.
+ */
+.time-column
+{
+  font-style: italic;
+  padding-left: 8px;
+}
+
+/*
+ * The title that sits above all forum posts.
+ */
+.forum-title
+{
+  background-color: rgb(134, 61, 55);
+  color: rgb(255, 255, 255);
+  padding: 1px;
+  text-align: center;
+}
+
+/*
+ * The forum title's logout (should be right justified and
+ * away from the rest of the test).
+ */
+.forum-title-logout
+{
+  padding-left: 50px;
+}
+
+.sidebar
+{
+  float: right;
+  position: relative;
+  width: 180px;
+}
+
+.forum-message
+{
+  background-color: rgb(229, 215, 126);
+  color: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: thin;
+  font-size: 0.9em;
+  text-align: left;
+  width: 100%;
+}
+
+.forum-message th
+{
+  background-color: rgb(134, 61, 55);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}

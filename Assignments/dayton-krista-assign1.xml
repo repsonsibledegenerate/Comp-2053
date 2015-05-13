@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+    
+    <inventory:items xmlns:inventory="http://www.chapters.ca/stock"><!--namespace created-->
+    <inventory:book id="c11258"><!-- the attribute is id -->
+        <inventory:category>COOKING</inventory:category>
+        <inventory:title lang="english">Plenty More&#9400;</inventory:title><!-- the attribute is lang -->
+        <inventory:author>Yotam Ottolenghi</inventory:author>
+        <inventory:year>2014</inventory:year>
+        <inventory:price>$30.00</inventory:price>
+    </inventory:book> 
+    
+    <inventory:book id="ch889700">
+        <inventory:category>CHILDREN</inventory:category>
+        <inventory:title lang="english">Horton Hears A Who &#9400;</inventory:title>
+        <inventory:author>Dr. Suess &#9415;</inventory:author>
+        <inventory:year>1988</inventory:year>
+        <inventory:price>$17.95</inventory:price>
+    </inventory:book> 
+    </inventory:items>
+    
+    <salesdept:sale xmlns:salesdept="http://www.chapters.ca/shoppingcart"><!--namespace created-->
+    <sales id="r23423"
+           date="2015/21/04"
+           rep="kdayto">
+    <salesdept:purchase>
+        <book code="10005598"
+              price="$30.00"
+              quantity="1"
+              subtotal="$30.00"/>
+    </salesdept:purchase>
+    </sales>
+    </salesdept:sale>
+    
+</bookstore>
+<!-- I didn't quite understand what to do the the 'marked section' -->
